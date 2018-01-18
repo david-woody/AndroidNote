@@ -6,5 +6,10 @@ pipeline {
         echo 'Wow'
       }
     }
+    stage('Build Image') {
+      steps {
+        sh 'docker build -t ${project} .'
+      }
+    }
   }
 }
