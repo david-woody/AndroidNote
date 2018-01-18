@@ -1,6 +1,7 @@
 pipeline {
   agent any
   stages {
+    def project = 'sa-android'
     stage('test') {
       steps {
         echo 'Wow'
